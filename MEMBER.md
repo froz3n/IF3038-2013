@@ -13,4 +13,4 @@ Tubes 2
  
  13510009 : Sonny Fitra A : son.froz.arc@gmail.com : froz3n
  
- 13510105 : Aidil Syaputra :
+ 13510105 : Aidil Syaputra : dil_syaputra@yahoo.com : ditra77
