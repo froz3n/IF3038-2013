@@ -126,6 +126,8 @@
 				Created by Gichie, Kamil, and Alex
 			</footer>
 		</div>
-		<?php include_once ("script.php"); ?>
+		<script src="js/bajuri.js"></script>
+		<script src="js/do.js"></script>	
+		<script src="js/checker.js"></script>	
 	</body>
 </html>
