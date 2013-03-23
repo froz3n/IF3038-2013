@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>New Task</title>
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="../css/style.css">
 	</head>
 
 	<body>
@@ -67,11 +67,9 @@
 			</div>
 		</div>
 			<footer class="site-footer">
-				Created by Gichie, Kamil, and Alex
+				Created by Gichie, Kamil, and Alex (Tubes I); Ajul, Aidil, and Alex
 			</footer>
 		</div>
-		<script src="js/bajuri.js"></script>
-		<script src="js/do.js"></script>	
-		<script src="js/checker.js"></script>	
+		<?php include_once ("script.php"); ?>		
 	</body>
 </html>

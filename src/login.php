@@ -28,7 +28,7 @@
 			</div>
 		</form>
 			<footer class="site-footer">
-				Created by Gichie, Kamil, and Alex
+				Created by Gichie, Kamil, and Alex (Tubes I); Ajul, Aidil, and Alex
 			</footer>
 		</div>
 	</body>

@@ -4,20 +4,23 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Task Details</title>
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="../css/style.css">
+		<?php include_once ("ambildatauser.php");?>
+		<?php include_once ("ambildatatugas.php");?>
+		<?php include_once ("ambildatakomentar.php");?>
 	</head>
 
 	<body>
 		<div class="site-container">
 			<header class="site-header">
-				<h1><a href="dashboard.html">Do</a></h1>
+				<h1><a href="dashboard.php">Do</a></h1>
 				<p>A to-do list for getting things done.</p>
 
 				<nav>
 					<ul class="main-links">
 						<li class="dashboard-link"><a href="dashboard.html">Dashboard</a></li>
-						<li class="profile-link" id="profileLink"><a href="profile.html" id="userFullName">John Doe</a></li>
-						<li class="profile-link"><a href="index.html">Logout</a></li>
+						<li class="profile-link" id="profileLink"><a href="profile.php" id="userFullName"><?php echo $fullname;?></a></li>
+						<li class="profile-link"><a href="../index.html">Logout</a></li>
 					</ul>
 
 					<div class="search-box">
@@ -37,7 +40,7 @@
 						<h1>
 							<label>
 								<span class="task-checkbox"><input type="checkbox" class="task-checkbox"></span>
-								<span class="task-title">Tugas 1</span>
+								<span class="task-title"><?php echo $namatugas;?></span>
 							</label>
 						</h1>
 					</form>
@@ -53,7 +56,7 @@
 						</header>
 						<p class="description">
 							<span class="detail-label">Description:</span>
-							<span>Lorem ipsum dolor sit amet, task description goes here.</span>
+							<span><?php echo $lampiran;?></span>
 						</p>
 						<p class="assignee">
 							<span class="detail-label">Assignee:</span>
@@ -67,10 +70,14 @@
 -->
 						<p class="tags">
 							<span class="detail-label">Tag:</span>
-							<span class="tag">satu</span>
-							<span class="tag">dua</span>
-							<span class="tag">tiga</span>
-							<span class="tag">empat</span>
+							<?php
+								$token = strtok($kategori, ";");
+								while ($token != false)
+								{
+									echo "<span class=\"tag\">$token</span>";
+									$token = strtok(";");
+								}
+							?>
 						</p>
 					</section>
 					<section class="attachment">
@@ -111,15 +118,11 @@
 				</div>
 				<section class="comments">
 					<header>
-						<h3>2 Comments</h3>
+						<h3>1 Comment(s)</h3>
 					</header>
 
 					<div id="commentsList">
 						<article class="comment">
-							<header>
-								<h4>Komentator</h4>
-							</header>
-							<p>Lorem ipsum dolor sit amet.</p>
 							<div class='avatar'>
 								<img src='http://img2.blogblog.com/img/b36-rounded.png'></img>																
 							</div>
@@ -130,28 +133,10 @@
 									</cite>
 									<br>
 									<span class='datetime secondary-text'>
-										<a>27 Februari 2013 15.01</a>
+										<a><?php echo $tanggalkom;?></a>
 									</span>
 								</div>
-								<p>Lorem ipsum dolor sit amet.</p>
-							</div>
-						</article>
-
-						<article class="comment">
-							<div class='avatar'>
-								<img src='http://img2.blogblog.com/img/b36-rounded.png'></img>																
-							</div>
-							<div class='user'>
-								<div>
-									<cite>
-										<a>Komentator</a>
-									</cite>
-									<br>
-									<span class='datetime secondary-text'>
-										<a>27 Februari 2013 15.01</a>
-									</span>
-								</div>
-								<p>Lorem ipsum dolor sit amet.</p>
+								<p><?php echo $isikom;?></p>
 							</div>
 						</article>
 					</div>
@@ -167,11 +152,9 @@
 			</div>
 		</div>
 			<footer class="site-footer">
-				Created by Gichie, Kamil, and Alex
+				Created by Gichie, Kamil, and Alex (Tubes I); Ajul, Aidil, and Alex
 			</footer>
 		</div>
-		<script src="js/bajuri.js"></script>
-		<script src="js/do.js"></script>	
-		<script src="js/checker.js"></script>	
+		<?php include_once ("script.php"); ?>		
 	</body>
 </html>
