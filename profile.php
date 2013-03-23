@@ -58,7 +58,7 @@
 
 					<p class="date-of-birth">
 						<span class="detail-label">Date of Birth:</span>
-						<span class="detail-value"><?echo $tanggal;?></span>
+						<span class="detail-value"><?php echo $tanggal;?></span>
 					</p>
 				</section>
 
@@ -281,7 +281,7 @@
 		</div>
 
 			<footer class="site-footer">
-				Created by Gichie, Kamil, and Alex
+				Created by Gichie, Kamil, and Alex (Tubes I); Ajul, Aidil, and Alex
 			</footer>
 		</div>
 		<script src="js/bajuri.js"></script>
