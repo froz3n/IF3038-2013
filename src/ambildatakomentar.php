@@ -1,6 +1,6 @@
 <?php 
 
-  		$dbname = "progin_405_13510005";
+			$dbname = "progin_405_13510005";
 			$host ="localhost";
 			$username="root";
 			$password="";
@@ -13,20 +13,19 @@ echo "Koneksi ke server gagal dilakukan";
 exit();
 }
 
-$query = "select * " . "from tugas order by ID_Tugas";
+$query = "select * " . "from komentar order by ID_Komentar";
 $result=mysqli_query($conn,$query);
 
 if ($result) 
 {
 	while ($row = mysqli_fetch_row($result)) {
-	 $IDTugas=$row[0];
-	 $namatugas=$row[1];
-	 $tanggaltugas=$row[2];
-	 $status=$row[3];
-	 $kategori=$row[4];
-	 $lampiran=$row[5];
+	 $ID=$row[0];
+	 $isikom=$row[1];
+	 $tanggalkom=$row[2];
+	
 	 
-
+	 
+	 
 	 
 	}
 	 mysqli_free_result($result);
