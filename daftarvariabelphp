@@ -1,0 +1,23 @@
+daftar variabel php untuk mengambil data:
+
+user:
+   $username
+   $password
+	 $fullname
+	 $email
+	 $tanggal
+	 $avatar
+
+komentar:
+   $ID
+   $isikom
+	 $tanggalkom
+
+tugas:
+
+$IDTugas=$row[0];
+   $namatugas
+	 $tanggaltugas
+	 $status
+	 $kategori
+	 $lampiran
