@@ -1,6 +1,6 @@
 <?php 
 
-  		$dbname = "progin_405_13510005";
+			$dbname = "progin_405_13510005";
 			$host ="localhost";
 			$username="root";
 			$password="";
@@ -25,8 +25,11 @@ if ($result)
 	 $status=$row[3];
 	 $kategori=$row[4];
 	 $lampiran=$row[5];
+	 $assignee=$row[6];
 	 
 	 
+	 
+	
 	}
 	 mysqli_free_result($result);
 	
