@@ -1,7 +1,7 @@
 <!doctype html>
 
 <html>
-  <head>
+	<head>
 		<meta charset="utf-8">
 		<title>Profile</title>
 		<link rel="stylesheet" href="css/style.css">
@@ -44,7 +44,7 @@
 
 				<section class="profile-details">
 					<figure class="profile-image">
-						<img src="assets/photo.jpg" alt="Profile Photo">
+						<img src="assets/<?php echo $avatar;?>" alt="Profile Photo">
 					</figure>
 					<p class="description">
 						<span class="detail-label">About Me:</span>
