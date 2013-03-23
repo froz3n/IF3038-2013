@@ -27,10 +27,6 @@ if ($result)
 	 $lampiran=$row[5];
 	 
 	 
-	 
-	 echo $IDTugas;
-	 echo $namatugas;
-	 
 	}
 	 mysqli_free_result($result);
 	
