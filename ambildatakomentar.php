@@ -26,10 +26,7 @@ if ($result)
 	 $kategori=$row[4];
 	 $lampiran=$row[5];
 	 
-	 
-	 
-	 echo $IDTugas;
-	 echo $namatugas;
+
 	 
 	}
 	 mysqli_free_result($result);
