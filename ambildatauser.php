@@ -1,6 +1,6 @@
 <?php 
 
-  		$dbname = "progin_405_13510005";
+			$dbname = "progin_405_13510005";
 			$host ="localhost";
 			$username="root";
 			$password="";
@@ -13,19 +13,23 @@ echo "Koneksi ke server gagal dilakukan";
 exit();
 }
 
-$query = "select fullname, avatar " . "from user order by fullname";
+$query = "select * " . "from user order by Username";
 $result=mysqli_query($conn,$query);
 
 if ($result) 
 {
 	while ($row = mysqli_fetch_row($result)) {
-	 $fullname=$row[0];
-	 $sayur=$row[1];
+	 $username=$row[0];
+	 $password=$row[1];
+	 $fullname=$row[2];
+	 $email=$row[3];
+	 $tanggal=$row[4];
+	 $avatar=$row[5];
 	 
 	 
 	 
 	 echo $fullname;
-	 echo $sayur;
+	 echo $email;
 	 
 	}
 	 mysqli_free_result($result);
