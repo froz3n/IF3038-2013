@@ -21,15 +21,11 @@ if ($result)
 	while ($row = mysqli_fetch_row($result)) {
 	 $username=$row[0];
 	 $password=$row[1];
-	 $fullname=$row[2];
-	 $email=$row[3];
+	 $fullname=$row[3];
+	 $email=$row[2];
 	 $tanggal=$row[4];
 	 $avatar=$row[5];
 	 
-	 
-	 
-	 echo $fullname;
-	 echo $email;
 	 
 	}
 	 mysqli_free_result($result);
