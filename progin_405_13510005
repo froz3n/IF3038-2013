@@ -1,0 +1,83 @@
+-- phpMyAdmin SQL Dump
+-- version 3.3.9
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Mar 23, 2013 at 08:49 AM
+-- Server version: 5.5.8
+-- PHP Version: 5.3.5
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- Database: `progin_405_13510005`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `komentar`
+--
+
+CREATE TABLE IF NOT EXISTS `komentar` (
+  `ID_Komentar` varchar(30) NOT NULL,
+  `Isi` longtext NOT NULL,
+  `Tanggal_Komentar` varchar(15) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `komentar`
+--
+
+INSERT INTO `komentar` (`ID_Komentar`, `Isi`, `Tanggal_Komentar`) VALUES
+('1', 'Wah Bagus yaaa', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tugas`
+--
+
+CREATE TABLE IF NOT EXISTS `tugas` (
+  `ID_Tugas` varchar(30) NOT NULL,
+  `Nama_Tugas` varchar(30) NOT NULL,
+  `Tanggal_Tugas` varchar(11) NOT NULL,
+  `Status` varchar(5) NOT NULL,
+  `Kategori` varchar(30) NOT NULL,
+  `Lampiran` longtext NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tugas`
+--
+
+INSERT INTO `tugas` (`ID_Tugas`, `Nama_Tugas`, `Tanggal_Tugas`, `Status`, `Kategori`, `Lampiran`) VALUES
+('2234', 'Berselancar', '', '', '', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE IF NOT EXISTS `user` (
+  `Username` varchar(30) NOT NULL,
+  `Password` varchar(30) NOT NULL,
+  `Email` varchar(100) NOT NULL,
+  `Fullname` varchar(100) NOT NULL,
+  `Tanggal_Lahir` varchar(15) NOT NULL,
+  `Avatar` longtext NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`Username`, `Password`, `Email`, `Fullname`, `Tanggal_Lahir`, `Avatar`) VALUES
+('aisyahdz', '270493xxx', 'aisyahdzulqaidah@yahoo.co.id', 'Aisyah Dzulqaidah', '31-03-2013', 'perfect.jpg');
