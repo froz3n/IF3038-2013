@@ -10,18 +10,18 @@
 	<body>
 		<div class="site-container">
 			<header class="site-header">
-				<h1><a href="dashboard.html">Do</a></h1>
+				<h1><a href="dashboard.php">Do</a></h1>
 				<p>A to-do list for getting things done.</p>
 
 				<nav>
 					<ul class="main-links">
-						<li class="dashboard-link"><a href="dashboard.html">Dashboard</a></li>
-						<li class="profile-link" id="profileLink"><a href="profile.html" id="userFullName">John Doe</a></li>
-						<li class="profile-link"><a href="index.html">Logout</a></li>
+						<li class="dashboard-link"><a href="dashboard.php">Dashboard</a></li>
+						<li class="profile-link" id="profileLink"><a href="profile.php" id="userFullName">John Doe</a></li>
+						<li class="profile-link"><a href="../index.php">Logout</a></li>
 					</ul>
 
 					<div class="search-box">
-						<form action="search.html" method="get" id="searchForm">
+						<form action="search.php" method="get" id="searchForm">
 							<input type="search" name="q" placeholder="Search">
 							<button type="submit">Search</button>
 						</form>

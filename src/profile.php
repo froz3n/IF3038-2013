@@ -15,7 +15,7 @@
 	
 		<div class="site-container">
 			<header class="site-header">
-				<h1><a href="dashboard.html">Do</a></h1>
+				<h1><a href="dashboard.php">Do</a></h1>
 				<p>A to-do list for getting things done.</p>
 
 				<nav>
@@ -26,7 +26,7 @@
 					</ul>
 
 					<div class="search-box">
-						<form action="search.html" method="get" id="searchForm">
+						<form action="search.php" method="get" id="searchForm">
 							<input type="search" name="q" placeholder="Search">
 							<button type="submit">Search</button>
 						</form>
@@ -73,7 +73,7 @@
 								<h1>
 									<label>
 										<span class="task-checkbox"><input type="checkbox" class="task-checkbox"></span>
-										<a href="view_tugas.html"><?php echo $namatugas; ?></a>
+										<a href="view_tugas.php"><?php echo $namatugas; ?></a>
 									</label>
 								</h1>
 							</header>
