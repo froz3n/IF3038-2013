@@ -10,14 +10,14 @@
 	<body>
 		<div class="site-container">
 			<header class="site-header">
-				<h1><a href="dashboard.php">Do</a></h1>
+				<h1><a href="dashboard.jsp">Do</a></h1>
 				<p>A to-do list for getting things done.</p>
 
 				<nav>
 					<ul class="main-links">
-						<li class="dashboard-link"><a href="dashboard.php">Dashboard</a></li>
-						<li class="profile-link" id="profileLink"><a href="profile.php" id="userFullName">John Doe</a></li>
-						<li class="profile-link"><a href="../index.php">Logout</a></li>
+						<li class="dashboard-link"><a href="dashboard.jsp">Dashboard</a></li>
+						<li class="profile-link" id="profileLink"><a href="profile.jsp" id="userFullName">John Doe</a></li>
+						<li class="profile-link"><a href="../index.jsp">Logout</a></li>
 					</ul>
 
 					<div class="search-box">
@@ -70,6 +70,6 @@
 				Created by Gichie, Kamil, and Alex (Tubes I); Ajul, Aidil, and Alex
 			</footer>
 		</div>
-		<?php include_once ("script.php"); ?>		
+		<?php include_once ("script.jsp"); ?>		
 	</body>
 </html>
