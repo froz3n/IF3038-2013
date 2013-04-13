@@ -5,8 +5,8 @@
 		<meta charset="utf-8">
 		<title>Profile</title>
 		<link rel="stylesheet" href="../css/style.css">
-		<?php include_once ("ambildatauser.php");?>
-		<?php include_once ("ambildatatugas.php");?>
+		<?php include_once ("ambildatauser.jsp");?>
+		<?php include_once ("ambildatatugas.jsp");?>
 		
 		
 	</head>
@@ -15,14 +15,14 @@
 	
 		<div class="site-container">
 			<header class="site-header">
-				<h1><a href="dashboard.php">Do</a></h1>
+				<h1><a href="dashboard.jsp">Do</a></h1>
 				<p>A to-do list for getting things done.</p>
 
 				<nav>
 					<ul class="main-links">
-						<li class="dashboard-link"><a href="dashboard.php">Dashboard</a></li>
-						<li class="profile-link" id="profileLink"><a href="profile.php" id="userFullName"><?php echo $fullname;?></a></li>
-						<li class="profile-link"><a href="../index.php">Logout</a></li>
+						<li class="dashboard-link"><a href="dashboard.jsp">Dashboard</a></li>
+						<li class="profile-link" id="profileLink"><a href="profile.jsp" id="userFullName"><?php echo $fullname;?></a></li>
+						<li class="profile-link"><a href="../index.jsp">Logout</a></li>
 					</ul>
 
 					<div class="search-box">
