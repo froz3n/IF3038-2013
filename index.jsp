@@ -1,3 +1,10 @@
+<%-- 
+    Document   : index
+    Created on : 13 Apr 13, 9:29:38
+    Author     : acer
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!doctype html>
 
 <html>
