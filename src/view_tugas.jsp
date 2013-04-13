@@ -5,9 +5,9 @@
 		<meta charset="utf-8">
 		<title>Task Details</title>
 		<link rel="stylesheet" href="../css/style.css">
-		<?php include_once ("ambildatauser.php");?>
-		<?php include_once ("ambildatatugas.php");?>
-		<?php include_once ("ambildatakomentar.php");?>
+		<?php include_once ("ambildatauser.jsp");?>
+		<?php include_once ("ambildatatugas.jsp");?>
+		<?php include_once ("ambildatakomentar.jsp");?>
 	</head>
 
 	<body>
@@ -19,7 +19,7 @@
 				<nav>
 					<ul class="main-links">
 						<li class="dashboard-link"><a href="dashboard.php">Dashboard</a></li>
-						<li class="profile-link" id="profileLink"><a href="profile.php" id="userFullName"><?php echo $fullname;?></a></li>
+						<li class="profile-link" id="profileLink"><a href="profile.jsp" id="userFullName"><?php echo $fullname;?></a></li>
 						<li class="profile-link"><a href="../index.php">Logout</a></li>
 					</ul>
 
@@ -155,6 +155,6 @@
 				Created by Gichie, Kamil, and Alex (Tubes I); Ajul, Aidil, and Alex
 			</footer>
 		</div>
-		<?php include_once ("script.php"); ?>		
+		<?php include_once ("script.jsp"); ?>		
 	</body>
 </html>
