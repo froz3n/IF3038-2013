@@ -1,3 +1,5 @@
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <?php 
 
 			$dbname = "progin_405_13510005";
@@ -20,19 +22,3 @@ if ($result)
 {
 	while ($row = mysqli_fetch_row($result)) {
 	 $ID=$row[0];
-	 $isikom=$row[1];
-	 $tanggalkom=$row[2];
-	
-	 
-	 
-	 
-	 
-	}
-	 mysqli_free_result($result);
-	
-	 }
-	 
-	 mysqli_close($conn);
-	
-
-?>
